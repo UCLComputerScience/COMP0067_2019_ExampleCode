@@ -5,7 +5,7 @@
         const checkConnection = mysql.createConnection({
           host: localhost,
           user: root,
-          password: szfy2511,
+          password: design2019,
           insecureAuth : true,
         });
           
@@ -24,7 +24,7 @@
     var connection = mysql.createPool({
       host: localhost,
       user: root,
-      password: szfy2511,
+      password: design2019,
       database: myDB,
       insecureAuth : true,
     });
