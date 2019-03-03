@@ -7,8 +7,8 @@ var server = http.createServer();
 
 server.on('request', function(req, res) {
 	console.log('render start');
-  // render(res);
-  // router(req, res);
+  render(res);
+  router(req, res);
 })
 
 // server.listen(config.port, config.host, function() {
