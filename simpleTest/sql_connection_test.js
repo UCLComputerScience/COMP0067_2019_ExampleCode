@@ -12,6 +12,5 @@ con.connect(function(err) {
   con.query("SELECT * FROM songs WHERE id = 1", function (err, result) {
     if (err) throw err;
       console.log(result);
-
   });
 });

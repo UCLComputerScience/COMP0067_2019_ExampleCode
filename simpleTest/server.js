@@ -20,20 +20,25 @@ con.connect(function(err) {
   server.on('request', function(req, res) {
           console.log("server start");  
 
-        //  sql = "SELECT * FROM songs";  
+           // res.writeHead(200, {'Content-Type': 'text/plain'});
+           // res.end('Hello World!');
 
-        // con.query(sql, (err, results) => {
-        //   if (err) {
-        //      console.dir(err);
-        //   }
-        //   console.log("query successful"); 
-        //   console.log(results);
+         sql = "SELECT * FROM songs where id = 1";  
+
+        con.query(sql, (err, results) => {
+          if (err) {
+             console.dir(err);
+          }
+          console.log("query successful"); 
+          console.log(results); 
+           // res.writeHead(200, {'Content-Type': 'text/plain'});
+           // res.end('The song is ' . results.title);
            
         //   // res.setHeader('Access-Control-Allow-Origin', '*');
         //   // res.writeHead(200, { 'Content-Type': 'application/json'});
         //   // res.end('hello');
         //   // res.end();
-        // });
+        });
 
     })
 
