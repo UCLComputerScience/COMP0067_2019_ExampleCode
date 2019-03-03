@@ -20,20 +20,20 @@ con.connect(function(err) {
   server.on('request', function(req, res) {
           console.log("server start");  
 
-         sql = "SELECT id, name, singer FROM songs";  
+        //  sql = "SELECT * FROM songs";  
 
-        con.query(sql, (err, results) => {
-          if (err) {
-             console.dir(err);
-          }
-          console.log("query successful"); 
-          console.log(results);
+        // con.query(sql, (err, results) => {
+        //   if (err) {
+        //      console.dir(err);
+        //   }
+        //   console.log("query successful"); 
+        //   console.log(results);
            
-          // res.setHeader('Access-Control-Allow-Origin', '*');
-          // res.writeHead(200, { 'Content-Type': 'application/json'});
-          // res.end('hello');
-          // res.end();
-        });
+        //   // res.setHeader('Access-Control-Allow-Origin', '*');
+        //   // res.writeHead(200, { 'Content-Type': 'application/json'});
+        //   // res.end('hello');
+        //   // res.end();
+        // });
 
     })
 
