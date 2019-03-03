@@ -15,7 +15,7 @@ var server = http.createServer();
 //   console.log('pleast visit http://' + config.host + ':' + config.port);
 // })
 
-server.listen(3000, function() {
+server.listen(config.port, config.host, function() {
      console.log('server is listening at port 3000');
 })
 
