@@ -3,9 +3,9 @@
     async function checkIfDatabaseExists(){
       return new Promise((resolve, reject) => {
         const checkConnection = mysql.createConnection({
-          host: localhost,
-          user: root,
-          password: design2019,
+          host: 'localhost',
+          user: 'root',
+          password: 'design2019',
           insecureAuth : true,
         });
           
@@ -22,10 +22,10 @@
 
     checkIfDatabaseExists();
     var connection = mysql.createPool({
-      host: localhost,
-      user: root,
-      password: design2019,
-      database: myDB,
+      host: 'localhost',
+      user: 'root',
+      password: 'design2019',
+      database: 'myDB',
       insecureAuth : true,
     });
 
