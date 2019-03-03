@@ -6,7 +6,6 @@ var render = require('./common/render');
 var server = http.createServer();
 
 server.on('request', function(req, res) {
-	console.log('render begin');
   render(res);
   router(req, res);
 })

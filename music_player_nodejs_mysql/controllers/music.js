@@ -17,11 +17,13 @@ con.connect(function(err) {
 
 exports.showIndex = function(req, res) {
   let sql = "SELECT * FROM `songs` ORDER BY id ASC";  
+  console.log("show query start!");
 
   con.query(sql, (err, result) => {
     if (err) {
        res.redirect('/');
     }
+    console.log("show query successfully!");
     res.render('index', {
        title: 'Home Page',
        musicList: result
