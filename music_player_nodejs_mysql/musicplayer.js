@@ -5,11 +5,11 @@ var config = require('./config');
 
 var server = http.createServer();
 
-// server.on('request', function(req, res) {
-// 	console.log('render start');
-//   render(res);
-//   router(req, res);
-// })
+server.on('request', function(req, res) {
+	console.log('render start');
+  // render(res);
+  // router(req, res);
+})
 
 // server.listen(config.port, config.host, function() {
 //   console.log('server is listening at port ' + config.port);
