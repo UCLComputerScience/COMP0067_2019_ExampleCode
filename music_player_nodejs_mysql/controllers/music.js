@@ -15,7 +15,9 @@ con.connect(function(err) {
   console.log("Connected to the database!");  
 });
 
-exports.showIndex = function(req, res) {
+exports.
+
+ = function(req, res) {
   let sql = "SELECT * FROM `songs` ORDER BY id ASC";  
   console.log("show query start!");
 
