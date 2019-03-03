@@ -1,7 +1,7 @@
 var http = require('http');
 var config = require('./config');
-// var router = require('./router');
-// var render = require('./common/render');
+var router = require('./router');
+var render = require('./common/render');
 
 var server = http.createServer();
 
