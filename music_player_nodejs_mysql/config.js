@@ -1,9 +1,9 @@
 var path = require('path');
 module.exports = {  
-  host: '127.0.0.1',
+  host: 'localhost',
   port: 3000,
   user: 'root',
-  password: '',
+  password: 'szfy2511',
   database: 'music',
   viewPath: path.join(__dirname, 'views')
 }
