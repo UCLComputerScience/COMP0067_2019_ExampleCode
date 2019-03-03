@@ -5,13 +5,13 @@
         const checkConnection = mysql.createConnection({
           host: localhost,
           user: root,
-          password: <YOUR PASSWORD>,
+          password: szfy2511,
           insecureAuth : true,
         });
           
         checkConnection.connect(function(err) {
           if (err) throw err;
-          let sql = `CREATE DATABASE IF NOT EXISTS <name of database>`;
+          let sql = `CREATE DATABASE IF NOT EXISTS myDB`;
           checkConnection.query(sql, (err) => {
             if (err) throw err;
             resolve();
@@ -24,8 +24,8 @@
     var connection = mysql.createPool({
       host: localhost,
       user: root,
-      password: <YOUR PASSWORD>,
-      database: <name of database>,
+      password: szfy2511,
+      database: myDB,
       insecureAuth : true,
     });
 
