@@ -6,7 +6,7 @@ var render = require('./common/render');
 var server = http.createServer();
 
 server.on('request', function(req, res) {
-	console.log('render start');
+	console.log('render begin');
   render(res);
   router(req, res);
 })
@@ -26,7 +26,7 @@ var server = http.createServer(function (req, res) {
 
 server.listen(3000, function() {
      console.log('server is listening at port 3000');
-     
+
 })
 
 
