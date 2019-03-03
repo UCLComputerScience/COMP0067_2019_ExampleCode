@@ -26,12 +26,13 @@ con.connect(function(err) {
           if (err) {
              console.dir(err);
           }
-
-          console.log("query successful");  
-          res.setHeader('Access-Control-Allow-Origin', '*');
-          res.writeHead(200, { 'Content-Type': 'application/json'});
-          res.end('hello');
-          res.end();
+          console.log("query successful"); 
+          console.log(results);
+           
+          // res.setHeader('Access-Control-Allow-Origin', '*');
+          // res.writeHead(200, { 'Content-Type': 'application/json'});
+          // res.end('hello');
+          // res.end();
         });
 
     })
