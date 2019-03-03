@@ -12,5 +12,7 @@ con.connect(function(err) {
   con.query("SELECT * FROM songs WHERE id = 1", function (err, result) {
     if (err) throw err;
     console.log(result);
+      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.end('Hello World!');
   });
 });
