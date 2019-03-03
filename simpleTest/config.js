@@ -4,7 +4,7 @@ module.exports = {
   dbHost: '127.0.0.1',
   port: 3000,
   user: 'root',
-  password: '',
+  password: 'design2019',
   database: 'music'
 }
 
